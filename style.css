@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  background-color: #1f2147;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%231d0044' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23590059'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E")
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    opacity: .7;
+  }
+
+header {
+  align-items: center;
+  background: #eee;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+}
+
+img {
+  height: auto;
+  margin-right: 2em;
+  width: 50px;
+}
+
+.counters {
+  background: #5fbcda;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+span, p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.quizdiv {
+  align-items: center;
+  display: flex;
+  height: 20em;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+.quizform {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #e3e3e3;
+  margin-top: 5em;
+  padding: 1em 2em;
+  width: 35%;
+}
+
+fieldset {
+  border-width: 1px;
+  border-style: none;
+}
+
+input[type=radio]{
+  background: blue;
+}
+
+label {
+  font-family: 'Roboto Slab', serif;  
+  font-size: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background: #5fbcda;
+  border-radius: 4px;
+  border-width: 0;
+  color: white;
+  font-size: 16px;
+  margin-top: 1.5em;
+  outline: none;
+  padding: 1em;
+  width: 15em;
+}
+
+@media (max-width: 399px) {
+  .quizform {
+    width: 100%;
+  }
+}
+
+/* Ipad portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .counters {
+    margin-bottom: 10em;
+  }
+}
+
+/* iPad landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .counters {
+    margin-bottom: 3em;
+  }
+}
+
+/* iPhone portrait */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) {
+  header {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h3 {
+    opacity: .7;
+  }
+
+  img {
+    margin-top: .3em;
+    height: 25px;
+    width: auto;
+  }
+  .counters {
+    margin-bottom: 3em;
+  }
+
+  .quizform {
+    width: 65%;
+  }
+}
+
+/* iPhone 6, 7, & 8 Plus in landscape */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+  header {
+    height: 30px;
+  }
+
+  img {
+    height: 25px;
+    width: auto;
+    margin-top: .3em;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .quizdiv {
+    margin: 0;
+  }
+
+  .quizform {
+    margin-top: 2em;
+    width: 75%;
+  }
+
+  p {
+    margin: .1em 0;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
+
+/* iPhone 5 & 5s in portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  .counters {
+    margin-bottom: 3em;
+  }
+}
+
+/* iPhone 2G, 3G, 4, 4S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 413px) and (orientation : portrait) {
+  header {
+    height: 50px;
+  }
+
+  .counters {
+    margin-bottom: 1em;
+  }
+  
+  .quizform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  img {
+    height: 35px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}

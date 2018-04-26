@@ -1,0 +1,12 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "A simple quiz app with certain requirements as provided by Thinkful.com",
+  "main": "index.js",
+  "scripts": {
+  	"start": "browser-sync start --server --files  '**/*.css, **/*.html, babel-node **/*.js' --directory --port 7777 --browser 'FirefoxDeveloperEdition'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hendrik Wendt",
+  "license": "ISC"
+}
