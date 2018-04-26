@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Hendrik Wendt" content="name">
+	<meta name="description" content="Test your knowledge with this 10 question space quiz">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Astronomy Quiz App</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header role='banner'>
+  <a href="https://repl.it/@HelleW/Quiz-App-Wireframe">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Circle-icons-rocket.svg/1024px-Circle-icons-rocket.svg.png" alt="Illustration of a space rocket">
+    </a>
+  <h1>Quizappp</h1>
+</header>
+
+<main role='main'>
+  <div class='counters'>
+    <p>Question: <span class='js-question-counter'>0</span> / 10</p>
+    <p>Score: <span class="js-score-counter">0</span></p>
+  </div>
+  <div class="quizdiv">
+    <div class="quizform js-intro">
+      <h2>Welcome, Willkommen, Bonjour, Buon giorno, Hola</h2>
+      <p>Test your knowledge in everything astronomy-related with 10 spacy questions.</p>
+      <div class="controls">
+        <button class="button js-intro-submit">Start Quiz</button>
+      </div>
+    </div>
+    <div class="quizform js-question"></div>
+    <div class="quizform js-feedback"></div>
+    <div class="quizform js-evaluation"></div>
+  </div>
+</main>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src='DB.js'></script>
+	<script src="index.js"></script>
+</body>
+</html>
